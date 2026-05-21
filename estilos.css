@@ -7,10 +7,9 @@
 }
 
 body {
-    background-color: #f0f2f5;
+    background-color: #f8f9fa; /* Un gris claro estilo minimalista */
     color: #333;
 }
-
 .contenedor {
     max-width: 1000px;
     margin: 30px auto;
