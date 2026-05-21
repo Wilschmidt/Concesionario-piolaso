@@ -1,0 +1,168 @@
+/* Estilos básicos para toda la web */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Barra de Navegación superior */
+.barra-navegacion {
+    background-color: #1a252f;
+    padding: 15px;
+    text-align: center;
+}
+
+.barra-navegacion a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.barra-navegacion a.activo {
+    color: #3498db; /* Resalta en qué pestaña estamos */
+}
+
+/* Grilla para ordenar las tarjetas de autos */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.tarjeta h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.descripcion {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+    height: 60px;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.video {
+    width: 100%;
+    height: 160px;
+    border: none;
+}
+
+/* Formularios de Login y Cotizador */
+.caja-formulario {
+    background-color: white;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.input-control {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.btn-azul {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-gris {
+    background-color: #7f8c8d;
+    color: white;
+}
+
+.alerta-resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 4px;
+    display: none; /* Oculto hasta que se calcula */
+    font-weight: bold;
+}
+
+/* Mapa */
+.seccion-mapa {
+    margin-top: 5px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.mapa-iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+/* Pie de página */
+.pie-pagina {
+    background-color: #1a252f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.pie-pagina a {
+    color: #3498db;
+}

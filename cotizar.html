@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Concesionario - Cotizar</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="codigo.js"></script>
+</head>
+<body>
+
+    <div class="barra-navegacion">
+        <a href="index.html">Catálogo</a>
+        <a href="cotizar.html" class="activo">Cotizar</a>
+        <a href="login.html">Mi Cuenta</a>
+    </div>
+
+    <div class="contenedor">
+        <div class="caja-formulario">
+            <h2>Cotizar Financiación</h2>
+            <br>
+            <p>Seleccione el auto:</p>
+            <select id="autoSeleccionado" class="input-control">
+                <option value="6000">Volkswagen Gol Power - U$S 6.000</option>
+                <option value="9000">Fiat Palio R - U$S 9.000</option>
+                <option value="250000">Audi R8 V10 - U$S 250.000</option>
+            </select>
+
+            <p>Monto de entrega inicial (U$S):</p>
+            <input type="number" id="entregaInicial" value="0" class="input-control">
+
+            <p>Cuotas:</p>
+            <select id="cuotasElegidas" class="input-control">
+                <option value="12">12 Meses</option>
+                <option value="24">24 Meses</option>
+                <option value="36">36 Meses</option>
+            </select>
+
+            <button onclick="calcularCotizacion()" class="btn-azul">Calcular Cuotas</button>
+            
+            <div id="resultado" class="alerta-resultado"></div>
+        </div>
+    </div>
+
+    <div class="pie-pagina">
+        <p>Número de teléfono: +54 9 2643241556</p>
+        <p>Correo electrónico: 2605672@ucc.edu.ar</p>
+    </div>
+
+</body>
+</html>
