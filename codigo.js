@@ -1,10 +1,10 @@
 
 function calcularCotizacion() {
  
-    let precioTotal = parseFloat(document.getElementById('autoSeleccionado').value);
-    let entrega = parseFloat(document.getElementById('entregaInicial').value) || 0;
-    let meses = parseInt(document.getElementById('cuotasElegidas').value);
-    let divResultado = document.getElementById('resultado');
+    var precioTotal = parseFloat(document.getElementById('autoSeleccionado').value);
+    var entrega = parseFloat(document.getElementById('entregaInicial').value) || 0;
+    var meses = parseInt(document.getElementById('cuotasElegidas').value);
+    var divResultado = document.getElementById('resultado');
 
  
     if (entrega >= precioTotal) {
@@ -16,8 +16,8 @@ function calcularCotizacion() {
     }
 
   
-    let saldoFinanciar = precioTotal - entrega;
-    let valorCuota = saldoFinanciar / meses;
+    var saldoFinanciar = precioTotal - entrega;
+    var valorCuota = saldoFinanciar / meses;
 
    
     divResultado.style.display = "block";
@@ -28,8 +28,8 @@ function calcularCotizacion() {
 
 
 function validarLogin() {
-    let user = document.getElementById('usuario').value;
-    let pass = document.getElementById('clave').value;
+    var user = document.getElementById('usuario').value;
+    var pass = document.getElementById('clave').value;
 
     if(user == "" || pass == "") {
         alert("Por favor, complete todos los campos.");
@@ -55,7 +55,7 @@ function irALogin() {
 }
 
 function registrarUsuario() {
-    let nombre = document.getElementById('regNombre').value;
+    var nombre = document.getElementById('regNombre').value;
     if(nombre == "") {
         alert("Por favor ingrese su nombre.");
     } else {
