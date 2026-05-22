@@ -1,12 +1,12 @@
-// --- FUNCIONES DEL COTIZADOR ---
+
 function calcularCotizacion() {
-    // Capturamos los datos de las cajas usando los IDs
+ 
     let precioTotal = parseFloat(document.getElementById('autoSeleccionado').value);
     let entrega = parseFloat(document.getElementById('entregaInicial').value) || 0;
     let meses = parseInt(document.getElementById('cuotasElegidas').value);
     let divResultado = document.getElementById('resultado');
 
-    // Validación básica por si pone una entrega inicial ilógica
+ 
     if (entrega >= precioTotal) {
         divResultado.style.display = "block";
         divResultado.style.backgroundColor = "#f8d7da";
@@ -15,18 +15,18 @@ function calcularCotizacion() {
         return;
     }
 
-    // Operación matemática simple
+  
     let saldoFinanciar = precioTotal - entrega;
     let valorCuota = saldoFinanciar / meses;
 
-    // Mostramos el resultado cambiando el estilo y escribiendo el HTML dinámico
+   
     divResultado.style.display = "block";
     divResultado.style.backgroundColor = "#d4edda";
     divResultado.style.color = "#155724";
     divResultado.innerHTML = "Saldo Neto a Financiar: U$S " + saldoFinanciar + "<br>Usted abonará " + meses + " cuotas fijas de: U$S " + valorCuota.toFixed(2);
 }
 
-// --- FUNCIONES DEL LOGIN Y INTERFACE ---
+
 function validarLogin() {
     let user = document.getElementById('usuario').value;
     let pass = document.getElementById('clave').value;
@@ -43,7 +43,7 @@ function limpiarCampos() {
     document.getElementById('clave').value = "";
 }
 
-// Cambiar de vistas en la misma pantalla usando .style.display
+
 function irARegistro() {
     document.getElementById('pantallaLogin').style.display = "none";
     document.getElementById('pantallaRegistro').style.display = "block";
@@ -60,6 +60,6 @@ function registrarUsuario() {
         alert("Por favor ingrese su nombre.");
     } else {
         alert("Cuenta creada con éxito para " + nombre);
-        irALogin(); // Lo devuelve al login
+        irALogin();
     }
 }
