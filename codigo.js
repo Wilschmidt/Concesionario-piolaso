@@ -23,7 +23,7 @@ function calcularCotizacion() {
     divResultado.style.display = "block";
     divResultado.style.backgroundColor = "#d4edda";
     divResultado.style.color = "#155724";
-    divResultado.innerHTML = "Saldo Neto a Financiar: U$S " + saldoFinanciar + "<br>Usted abonará " + meses + " cuotas fijas de: U$S " + valorCuota.toFixed(2);
+    divResultado.innerHTML = "Saldo Neto a Financiar: U$S " + saldoFinanciar + "<br>Usted abonará " + meses + " cuotas fijas de: U$S " + valorCuota;
 }
 
 
